@@ -16,10 +16,10 @@ setup(
     description=(
         'wutangy is a WuTang inspired lorem ispsum generator, SUUUUUUUUUU'),
     url='https://github.com/ejmg/wutangy',
-    version='0.0.1dev',
+    version='0.0.11dev',
     packages=find_packages(),
     entry_points={
-        "console_scripts": ['wutang = wutang.wutangy:wu'],
+        "console_scripts": ['wutangy = wutangy.wutangy:wu'],
     },
     install_requires=[],
     include_package_data=True,
