@@ -14,6 +14,8 @@ RIP ODB.
 :author: elias julian marko garcia
 :license: MIT, see LICENSE
 """
+import sys
+from random import randint
 bringDa = [
     "Shaolin", "shadowboxing", "and", "the", "Wu-Tang", "sword", "style.",
     "If", "what", "you", "say", "is", "true,", "Shaolin", "and", "Wu-Tang",
@@ -178,7 +180,21 @@ clanIn = [
     "can't", "fuck", "with", "those", "in", "major", "leagues"
 ]
 
+longAssList = bringDa + shameOn + clanIn
 
-def wu():
+first = filter(lambda x: x[0] == x[0].upper(), longAssList)
+
+
+def sentence(size):
+    print(first)
+
+
+def wu(chambers=0):
+    ipsum = []
+    if not chambers:
+        if (len(sys.argv) > 1):
+            chambers = sys.argv[1]
+        else:
+            chambers = 5
 
     print('WUTANG COMING AT YOU IN DUE TIME')
