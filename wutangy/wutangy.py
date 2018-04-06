@@ -1,18 +1,18 @@
 """
 wutangy.py
-~~~~~~~~
+~~~~~~~~~
 
 wutangy is a module that creates WuTang Clan inspired lorem ipsum text.
+
 Enter the 36 Chambers of the Shaolin, WuTang Killah Bees on the swarm.
-
 suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-
 
 RIP ODB.
 
 :copyright: @ 2018
 :author: elias julian marko garcia
 :license: MIT, see LICENSE
+:LYRICS: EXCLUSIVE INTELLECTUAL PROPERTY OF THE WUTANG CLAN. 
 """
 import sys
 from random import randint
@@ -24,6 +24,13 @@ longAssList = (bringDa + shameOn + clanIn + seventhChamber + canItAll +
                daMystery + aintNuthing + cREAM + methodMan + protectYa + tearz)
 
 first = filter(lambda x: x[0] == x[0].upper(), longAssList)
+
+last = filter(lambda x: x[-1] == '?' or x[-1] == '!' or x[-1] == '.',
+              longAssList)
+
+rest = filter(
+    lambda x: x[0] != x[0].upper() or x[-1] != '?' or x[-1] != '!' or x[-1] != '.',
+    longAssList)
 
 
 def sentence(size):
